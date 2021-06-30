@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+body {
+    margin: 0%; /*margen externa*/
+    font-family: 'Mukta', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-header.png);
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.container { /*el punto que se coloca antes del container se usa ya que es una clase=class*/
+    width: 1200px; /*ancho*/
+    margin: 0 auto; /*margen externa*/
+    padding-top: 50px; /*margen interna*/
+}
+nav{
+    display: flex; /*plano en 2 demensiones x-y*/
+    justify-content: space-between;
+    align-items: center;
+}
+#menu ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+#menu ul li a {
+    color:#e2dada;
+    font-size: 24px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+#menu ul li a:hover{
+    border-bottom: 2px solid rgb(44, 5, 77);
+    color: rgb(44, 5, 77);
+}
+#hero {
+    text-align: center;
+    padding-top: 200px;
+}
+
+#hero a img{
+    width: 250px;
+}
+#hero h1 {
+    color: #3f0e8d ;
+    font-size: 70px;
+    margin: 0;
+}
+#hero h3 {
+    color: #e2dada;
+    font-size: 30px;
+    margin: 0;
+}
+#hero button {
+    background: rgb(111, 0, 255);
+    color: #999999;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 12px 20px;
+    border: none;
+    transition: .4s;
+}
+#hero button:hover{
+    background: #ffffff;
+}
+
+/*INICIO SECCIÓN PLANES*/
+
+#planes{
+    background: #fcf5ff;
+    width: 100%;
+    position: 100%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    text-align: center; /*alineación de texto*/
+}
+
+
+#planes h2{
+    font-size: 60px;
+}
+
+#planes p{
+    font-size: 22px;
+    margin-bottom: 70px;
+}
+
+#planes .row{
+    display: flex;
+    justify-content: space-around; /*Contenido horizontal*/
+    align-items: center; /*Contenido vertical*/
+}
+
+#planes .row .item-planes{
+    padding: 10px;
+    position: relative;
+}
+
+#planes .row .item-planes img{
+    transition: 0.4s;
+}
+
+#planes .row .item-planes:hover img{
+    border-radius: 50%;
+}
+
+#planes .row .item-planes:hover h3{
+    transition: 0.4s;
+    color: #ffffff;
+}
+
+#planes .row .item-planes h3{
+    position: absolute;
+    top: 75px;
+    color: #7027e4;
+    left: 0px;
+    right: 0px;
+    font-size: 40px;
+}
+
+#planes .row .item-planes:hover{
+    box-shadow: 0px 0px 9px 0px #b7b7b9;
+    transition: 0.4s;
+}
+
+
+/*INICIO SECCIÓN DESTINOS*/
+
+#destinos{
+    width: 100%;
+    height: 120vh;
+    background: url(../img/bg-destinos.png);
+    background-size:cover;
+    padding-top: 45px;
+    padding-bottom: 70px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#destinos h2{
+    color: #3f0e8d;
+    font-size: 60px;
+    
+}
+
+#destinos .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#destinos .row .item-destinos{
+    padding: 25px;
+    position: relative;
+    width: 350px;
+}
+
+#destinos .row .item-destinos h3{
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0;
+}
+
+#destinos .row .item-destinos h3:hover{
+    transition: 0.4s;
+    color: rgb(111, 0, 255);
+}
+#destinos .row .item-destinos img{
+    opacity: 0.9;
+}
+
+#destinos .row .item-destinos img:hover{
+    opacity: 0.7;
+    background-color: rgb(111, 0, 255);
+    color:rgb(111, 0, 255);
+    border-radius: 50%;
+    transition: 0.4s;
+    
+    /*filter:  alpha(opacity=20)*//*transparencia*/
+}
+
+/*SECCIÓN CONTACTO*/
+
+#contacto {
+    background: #3f0e8d;
+    padding: 20px 0 80px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 58px;
+    color: #e2dada;
+}
+
+#contacto p {
+    font-size: 24px;
+    margin-bottom: 60px;
+    color: #e2dada;
+}
+
+#contacto .row{
+    margin-top: 25px;
+}
+
+#contacto .row .campof{
+    width: 350px;
+    padding: 12px;
+    margin: 0 15px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid #999999;
+}
+
+#contacto .row select{
+    width: 376px !important;
+    color: #5d5757;
+}
+
+#contacto form button{
+    padding: 10px 60px;
+    font-size: 20px;
+    margin-top: 40px;
+    background: rgb(111, 0, 255);
+    color: #ffffff;
+    border-radius: 5px;
+    border: transparent;
+}
+
+footer{
+    background: #000000;
+    color: #e2dada;
+    font-size: 22px;
+    text-align: center;
+    padding: 40px 0;
+}

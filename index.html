@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website LOTUS</title>
+    <link rel="stylesheet" href="css/style.css"> <!--llamar la carpeta de styly -->
+</head>
+
+<body>
+    <header>
+        <div class="container"> <!--centra el conteniso a 1200px mayormente en css--> <!--elementos que a nivel de que los estilos se repitan deben tener una clase-->
+            <nav>
+                <div id="logo">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div id="menu">
+                    <ul> <!--lista desordenada-->
+                        <li><a href="#">Inicio</a></li> <!--item de lista-->
+                        <li><a href="#planes">Meditación</a></li>
+                        <li><a href="#destinos">Yoga</a></li>
+                        <li><a href="#contacto">Contactos</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="hero">
+                <img src="img/brujula.png" alt=""><br><br>
+                <a href=""><img src="img/letra.png" alt=""></a>
+                <h3>EL SITIO WEB DE YOGA Y MEDITACIÓN IDEAL PARA TI</h3>
+                <button>EMPEZAR</button>
+            </div>
+        </div>
+    </header>
+<!-- fin sección principal -->
+
+<!-- inicio sección planes -->
+    <div id="planes"> <!--elementos diferentes id-->
+        <div class="container">
+            <h2>MEDITACIÓN</h2>
+            <p>En <b>LOTUS</b> tenemos los siguientes planes para ti.<br>Descubre sobre los beneficios que atienden al llamado de los chakras del cuerpo humano <br> Selecciona el plan que más se ajuste a la experiencia que quieras vivir</p>
+            <div class="row">
+                <div class="item-planes">
+                    <img src="img/senderismo.png" alt="">
+                    <h3>MULADHARA</h3>
+                    <p>Luz = Rojo<br> 
+                        Mantra: LAM <br>
+                        SWADHISTHANA<br>
+                        Luz = Naranja<br>
+                        Mantra: MAM </p>
+                </div>
+                <div class="item-planes">
+                    <img src="img/canotaje.png" alt="">
+                    <h3>MANIPURA</h3>
+                    <p>Luz = Amarillo Mantra: RAM<br> 
+                        ANAHATA <br>
+                        Luz = Verde Mantra: IAM<br>
+                        VISSUDHA<br>
+                        Luz = Azul Mantra: JAM</p>
+                </div>
+                <div class="item-planes">
+                    <img src="img/ajna.png" alt="">
+                    <h3>AJNA</h3>
+                    <p>Luz = Azul índigo<br> 
+                        Mantra: OM <br>
+                        SAHASRARA<br>
+                        Luz = Violeta<br>
+                        Mantra: OM </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIN SELECCIÓN PLANES -->
+
+    <!-- INICIO SELECCIÓN DESTINOS -->
+    <div id="destinos">
+        <div class="container">
+            <h2>POSES DE YOGA</h2>
+            <div class="row">
+                <div class="item-destinos">
+                    <img src="img/cartagena.png" alt="">
+                    <h3>LOTUS POSE/PADMASANA</h3>
+                </div>
+                <div class="item-destinos">
+                    <img src="img/barranquilla.png" alt="">
+                    <h3>CRANE POSE/BACASANA</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item-destinos">
+                    <img src="img/llanos.png" alt="">
+                    <h3>TWIST CHAIR POSE/PARIVRTTA UTKATASANA</h3>
+                </div>
+                <div class="item-destinos">
+                    <img src="img/laguajira.png" alt="">
+                    <h3>WARRIOR POSE/VIRABHADRASANA</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--INICIO SELECCIÓN CONTACTOS-->
+    <div id="contacto">
+        <div class="container">
+            <h2>CONTACTO</h2>
+            <p>Comparte con nosotros tus datos de contacto y te enviaremos<br> toda la informacón de nuestras rutinas de meditación y yoga.</p>
+            <form action="#">
+                <div class="row">
+                    <input class="campof" type="text" placeholder="Nombres">
+                    <input class="campof" type="number" placeholder="Teléfono">
+                </div>
+                <div class="row">
+                    <input class="campof" type="email" placeholder="Email">
+                    <select class="campof" name="#" id="#">
+                        <option value="#">Ciudad</option>
+                        <option value="#">Bogotá</option>
+                        <option value="#">Chía</option>
+                        <option value="#">Cajicá</option>
+                    </select>
+                </div>
+                <button>ENVIAR</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Todos los derechos reservados</p>
+        <p>yogaymeditación@lotus.com</p>
+        <p>+57 3168390138</p>
+        <p>Cr 90 #93 - 20</p>
+    </footer>
+</body>
+</html>
